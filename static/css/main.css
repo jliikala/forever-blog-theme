@@ -1,0 +1,49 @@
+:root {
+  --text: #010101;
+  --link: rgb(0, 116, 179);
+  --link-visited: rgb(4, 72, 108);
+  --background-color: white;
+  --font-family: Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fafafa;
+    --link: rgb(0, 116, 179);
+    --link-visited: rgb(4, 72, 108);
+    --background: black;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text);
+}
+
+.container {
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+main, aside {
+  padding: 20px;
+}
+
+footer {
+  padding: 10px 0;
+}
