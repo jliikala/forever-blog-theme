@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="posts h-feed">
+  <div class="post_list" role="main">
+      {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+      {{ range .Paginator.Pages }}
+      <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
+        <div class="post-date-wrapper">
+        <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></a>
+        </div>
+        {{ if .Title }}
+            <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ if in .RawContent "<!--more-->" }}
+                    <div class="p-summary">
+                        {{ $splitContents := split .RawContent "<!--more-->" }}
+                        {{ $summary := index $splitContents 0 }}
+                        {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+                        {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+                        <p>{{ $summary | markdownify }}</p>
+                        <p><a class="read-more" href="{{ .Permalink }}"><button>
+                            Read More →
+                        </button></a></p>
+                    </div>
+                {{ else }}
+                    <div class="e-content with-title">
+                        {{ .Content }}
+                    </div>
+                {{ end }}
+        {{ else }}
+            <div class="e-content without-title">
+                {{ .Content }}
+            </div>
+        {{ end }}
+      </div>
+      <hr class="article-break">
+      {{ end }}
+  </div>
+</div>
+{{ end }}

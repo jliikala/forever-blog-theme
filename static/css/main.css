@@ -32,11 +32,16 @@ header {
   padding: 20px 0;
 }
 
-.content {
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.content-area {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
-  width: 100%;
+  width: 80%;
   margin: 20px auto;
 }
 
@@ -44,6 +49,15 @@ main, aside {
   padding: 20px;
 }
 
+.sidebar-widget {
+  margin-bottom: 20px;
+}
+
+.sidebar-widget h3 {
+  margin-top: 0;
+}
+
 footer {
   padding: 10px 0;
+  text-align: center;
 }

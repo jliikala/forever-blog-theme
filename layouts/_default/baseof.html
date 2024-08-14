@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.languageCode | default "en" }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    <div class="content-area">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "sidebar.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+
+    {{ range .Site.Params.plugins_js }}
+    <script src="{{ . }}"></script>
+    {{ end }}
+  </body>
+
+</html>
