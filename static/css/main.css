@@ -41,7 +41,7 @@ header h1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
-  width: 80%;
+  max-width: 70em;
   margin: 20px auto;
 }
 
@@ -60,4 +60,9 @@ main, aside {
 footer {
   padding: 10px 0;
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
