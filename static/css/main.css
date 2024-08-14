@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 70em;
+  max-width: 80em;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ header nav ul li a {
   margin: 20px auto;
 }
 
-main, aside {
+.site-header, .content-area, .site-footer {
   padding: 20px;
 }
 
