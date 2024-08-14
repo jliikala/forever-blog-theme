@@ -1,7 +1,13 @@
 <aside>
   <div class="sidebar-widget">
-      <h3>About Me</h3>
-      <p>{{ .Site.Params.itunes_description | safeHTML }}.</p>
+    {{ if templates.Exists "partials/microhook-sidebar-bio.html" }}
+      {{ partial "microhook-sidebar-bio.html" . }}
+    {{ else }}
+    <p class="description">
+      {{ .Site.Params.itunes_description | safeHTML }}
+      <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80">
+    </p>
+    {{ end }}
   </div>
   <div class="sidebar-widget">
     {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
