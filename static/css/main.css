@@ -108,7 +108,7 @@ img {
   padding-bottom: 2rem;
 }
 
-div.sidebar-partial:last-of-type, div.post-list .post-preview {
+div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   border: none;
   padding-bottom: 0;
 }
