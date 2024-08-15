@@ -31,10 +31,12 @@
         {{ range $list }}
         {{ $categoryName := .Title }}
         {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
+        {{ if gt $postCount 0 }}
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
           ({{ $postCount }})
         </li>
+        {{ end }}
         {{ end }}
       </ul>
     </div>
