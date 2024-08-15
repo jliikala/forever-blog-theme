@@ -138,6 +138,7 @@ header .container {
 header h1 {
   margin: 0;
   padding: 0;
+  color: var(--text);
 }
 
 header h1 a {

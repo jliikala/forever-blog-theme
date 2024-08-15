@@ -14,12 +14,12 @@
       {{ partial "microhook-sidebar-subscribe.html" . }}
     {{ else }}
       {{ if .Site.Params.newsletterId }}
-      <span>Subscribe to the email newsletter for this blog.</span>
+      <h3>Subscribe to email updates for this blog</h3>
       <form method="POST" action="https://micro.blog/users/subscribe/{{ .Site.Params.newsletterId }}">
         <input type="text" name="email" size="30" placeholder="Your email address" />
         <input type="submit" value="Subscribe" />
       </form>
-      <p>Alternatively, you can also subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
+      <p>You can also subscribe <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
       {{ else }}
         <span>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</span>
       {{ end }}
