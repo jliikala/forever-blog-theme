@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <div class="sidebar-partial">
-    {{ if templates.Exists "microhooks/sidebar-bio.html" }}
+    {{ if templates.Exists "partials/microhooks/sidebar-bio.html" }}
       {{ partial "sidebar-bio.html" . }}
     {{ else }}
     <p class="description">
@@ -10,7 +10,7 @@
     {{ end }}
   </div>
   <div class="sidebar-partial">
-    {{ if templates.Exists "microhooks/sidebar-subscribe.html" }}
+    {{ if templates.Exists "partials/microhooks/sidebar-subscribe.html" }}
       {{ partial "sidebar-bio.html" . }}
     {{ else }}
       {{ if .Site.Params.newslettersId }}
