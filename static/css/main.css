@@ -116,3 +116,12 @@ div.sidebar-partial:last-of-type {
 .sidebar-partial h3 {
   margin-top: 0;
 }
+
+/* Post list */
+.post-title.p-name a, .post-date.u-url {
+  text-decoration: none;
+}
+
+.post-date.u-url {
+  color: var(--text);
+}
