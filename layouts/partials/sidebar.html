@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <div class="sidebar-partial">
-    {{ if templates.Exists "partials/microhook-sidebar-bio.html" }}
+    {{ if templates.Exists "microhooks/microhook-sidebar-bio.html" }}
       {{ partial "microhook-sidebar-bio.html" . }}
     {{ else }}
     <p class="description">
@@ -10,16 +10,19 @@
     {{ end }}
   </div>
   <div class="sidebar-partial">
-    {{ if .Site.Params.newsletters_enabled }}
+    {{ if templates.Exists "microhooks/microhook-sidebar-subscribe.html" }}
+      {{ partial "microhook-sidebar-bio.html" . }}
+    {{ else }}
+      {{ if .Site.Params.newslettersId }}
       <span>Subscribe to the email newsletter for this blog.</span>
-
-      <form method="POST" action="https://micro.blog/users/subscribe/65934">
+      <form method="POST" action="https://micro.blog/users/subscribe/{{ .Site.Params.newsletterId }}">
         <input type="text" name="email" size="30" placeholder="Your email address" />
         <input type="submit" value="Subscribe" />
       </form>
       <p>Alternatively, you can also subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
-    {{ else }}
-      <span>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</span>
+      {{ else }}
+        <span>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</span>
+      {{ end }}
     {{ end }}
   </div>
   <div class="sidebar-partial">
