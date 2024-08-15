@@ -11,15 +11,15 @@
   </div>
   <div class="sidebar-partial">
     {{ if .Site.Params.newsletters_enabled }}
-    <p>Subscribe to the email newsletter for this blog.</p>
+      <span>Subscribe to the email newsletter for this blog.</span>
 
-    <form method="POST" action="https://micro.blog/users/subscribe/65934">
-      <input type="text" name="email" size="30" placeholder="Your email address" />
-      <input type="submit" value="Subscribe" />
-    </form>
-    <p>Alternatively, you can also subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
+      <form method="POST" action="https://micro.blog/users/subscribe/65934">
+        <input type="text" name="email" size="30" placeholder="Your email address" />
+        <input type="submit" value="Subscribe" />
+      </form>
+      <p>Alternatively, you can also subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
     {{ else }}
-      <p>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
+      <span>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</span>
     {{ end }}
   </div>
   <div class="sidebar-partial">
@@ -29,7 +29,10 @@
       <h3>Categories</h3>
       <ul>
         {{ range $list }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          ({{ len (where $.Site.RegularPages "Params.categories" "in" .Title) }})
+        </li>
         {{ end }}
       </ul>
     </div>
