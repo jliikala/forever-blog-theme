@@ -97,7 +97,7 @@ img {
 
 /* Sidebar */
 
-.sidebar {
+.sidebar, main .post-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
