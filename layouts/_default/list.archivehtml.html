@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="archive">
   <h2 class="p-name">Archive</h2>
-		{{ $posts := where .Site.RegularPages "Type" "post" }}
+	{{ $posts := where .Site.RegularPages "Type" "post" }}
     {{ $years := dict }} <!-- Create a dictionary to store posts by year -->
 
     <!-- Group posts by year -->
