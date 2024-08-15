@@ -31,7 +31,7 @@
         {{ range $list }}
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
-          ({{ len (where $.Site.RegularPages "Params.categories" "in" .Title) }})
+          ({{ len (where $.Site.Pages "Params.categories" "in" .Title) }})
         </li>
         {{ end }}
       </ul>
