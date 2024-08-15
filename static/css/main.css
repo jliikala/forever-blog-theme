@@ -4,6 +4,7 @@
   --link-visited: rgb(4, 72, 108);
   --background-color: white;
   --font-family: "-apple-system",BlinkMacSystemFont,"helvetica neue",Helvetica,Arial,sans-serif;
+  --spacing: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,10 +93,6 @@ select {
   }
 }
 
-figure {
-  margin: 0;
-}
-
 body {
   font-family: var(--font-family);
   margin: 0;
@@ -161,11 +158,6 @@ header nav ul li a {
 footer {
   padding: 10px 0;
   text-align: center;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .profile-photo.u-photo {
