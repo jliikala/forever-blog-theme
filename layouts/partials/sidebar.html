@@ -13,7 +13,7 @@
     {{ if templates.Exists "partials/microhook-sidebar-subscribe.html" }}
       {{ partial "microhook-sidebar-subscribe.html" . }}
     {{ else }}
-      {{ if .Site.Params.newslettersId }}
+      {{ if .Site.Params.newsletterId }}
       <span>Subscribe to the email newsletter for this blog.</span>
       <form method="POST" action="https://micro.blog/users/subscribe/{{ .Site.Params.newsletterId }}">
         <input type="text" name="email" size="30" placeholder="Your email address" />
