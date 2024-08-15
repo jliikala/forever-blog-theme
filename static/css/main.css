@@ -170,12 +170,7 @@ header nav ul li a {
   margin: 20px auto;
 }
 
-.site-header, .content-area, .site-footer {
-  padding: 20px;
-}
-
 footer {
-  padding: 10px 0;
   text-align: center;
 }
 
