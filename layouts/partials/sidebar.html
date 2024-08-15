@@ -29,9 +29,11 @@
       <h3>Categories</h3>
       <ul>
         {{ range $list }}
+        {{ $categoryName := .Title }}
+        {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
-          ({{ len (where $.Site.Pages "Params.categories" "in" .Title) }})
+          ({{ $postCount }})
         </li>
         {{ end }}
       </ul>
