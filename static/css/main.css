@@ -99,6 +99,25 @@ body {
   padding: 0;
   background-color: var(--background-color);
   color: var(--text);
+  padding: var(--spacing);
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: var(--spacing);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: var(--spacing);
+  margin-bottom: calc(var(--spacing) / 2); /* Slightly smaller margin for tighter heading spacing */
 }
 
 .container {
