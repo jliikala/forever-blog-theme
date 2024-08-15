@@ -1,19 +1,19 @@
 {{ define "main" }}
 <div class="archive">
   <h2 class="p-name">Archive</h2>
-	{{ $posts := where .Site.RegularPages "Type" "post" }}
+		{{{ $posts := where .Site.RegularPages "Type" "post" }}
     {{ $years := dict }} <!-- Create a dictionary to store posts by year -->
 
     <!-- Group posts by year -->
     {{ range $posts }}
         {{ $year := .Date.Format "2006" }}
-        {{ if not (index $years $year) }}
-            {{ $years = $years | merge (dict $year (slice .)) }}
+        {{ with index $years $year }}
+            {{ $yearPosts := . }}
         {{ else }}
-            {{ $yearPosts := index $years $year }}
-            {{ $yearPosts = $yearPosts | append . }}
-            {{ $years = $years | merge (dict $year $yearPosts) }}
+            {{ $yearPosts := slice }}
         {{ end }}
+        {{ $yearPosts = $yearPosts | append . }}
+        {{ $years = $years | merge (dict $year $yearPosts) }}
     {{ end }}
 
     <!-- Display posts grouped by year -->
