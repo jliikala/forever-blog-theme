@@ -1,3 +1,7 @@
 {
-  "paginate": 20
+  "paginate": 20,
+  "params": {
+    "newsletters_enabled": true,
+    "languageCode": "en"
+  }
 }

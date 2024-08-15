@@ -10,11 +10,11 @@
     {{ end }}
   </div>
   <div class="sidebar-widget">
-    {{ if HasFeature "newsletters" }}
-      <!-- Code for users with the newsletters feature enabled -->
+    {{ if .Site.Params.newsletters_enabled }}
+      <!-- Code for users with newsletters enabled -->
       <p>You have newsletters enabled!</p>
     {{ else }}
-      <!-- Code for users without the newsletters feature enabled -->
+      <!-- Code for users without newsletters enabled -->
       <p>Newsletters are not enabled.</p>
     {{ end }}
   </div>
