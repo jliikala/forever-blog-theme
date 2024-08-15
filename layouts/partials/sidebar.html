@@ -11,11 +11,15 @@
   </div>
   <div class="sidebar-widget">
     {{ if .Site.Params.newsletters_enabled }}
-      <!-- Code for users with newsletters enabled -->
-      <p>You have newsletters enabled!</p>
+    <p>Subscribe to the email newsletter for this blog.</p>
+
+    <form method="POST" action="https://micro.blog/users/subscribe/65934">
+      <input type="text" name="email" size="30" placeholder="Your email address" />
+      <input type="submit" value="Subscribe" />
+    </form>
+    <p>Alternatively, you can also subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
     {{ else }}
-      <!-- Code for users without newsletters enabled -->
-      <p>Newsletters are not enabled.</p>
+      <p>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</p>
     {{ end }}
   </div>
   <div class="sidebar-widget">
