@@ -11,7 +11,7 @@
   </div>
   <div class="sidebar-partial">
     {{ if templates.Exists "partials/microhooks/sidebar-subscribe.html" }}
-      {{ partial "sidebar-bio.html" . }}
+      {{ partial "sidebar-subscribe.html" . }}
     {{ else }}
       {{ if .Site.Params.newslettersId }}
       <span>Subscribe to the email newsletter for this blog.</span>
