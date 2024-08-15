@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="archive">
   <h2 class="p-name">Archive</h2>
-	{{ $postsByYear := (.Site.RegularPages | where "Type" "post" | groupByDate "2006") }}
+	{{ $postsByYear := (.Site.RegularPages | where "Type" "post" | GroupByDate "2006") }}
 	{{ range $postsByYear }}
 	<div class="full-archives h-feed">
 		<h3>{{ .Key }}</h3> <!-- Display the year -->
