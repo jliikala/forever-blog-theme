@@ -10,6 +10,15 @@
     {{ end }}
   </div>
   <div class="sidebar-widget">
+    {{ if HasFeature "newsletters" }}
+      <!-- Code for users with the newsletters feature enabled -->
+      <p>You have newsletters enabled!</p>
+    {{ else }}
+      <!-- Code for users without the newsletters feature enabled -->
+      <p>Newsletters are not enabled.</p>
+    {{ end }}
+  </div>
+  <div class="sidebar-widget">
     {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     {{ if gt (len $list) 0 }}
     <div class="archive-categories">
