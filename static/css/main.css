@@ -120,6 +120,25 @@ h6 {
   margin-bottom: calc(var(--spacing) / 2); /* Slightly smaller margin for tighter heading spacing */
 }
 
+.blog-container {
+  display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-header {
+  grid-area: header;
+  border-bottom: 1px dashed var(--text);
+  padding-bottom: 20px;
+}
+
 .container {
   max-width: 80em;
   margin: 0 auto;
@@ -165,14 +184,26 @@ header nav ul li a {
 
 .content-area {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10em;
-  max-width: 80em;
-  margin: 20px auto;
+  grid-template-areas:
+      "posts sidebar";
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  grid-area: content;
+}
+
+.posts {
+  grid-area: posts;
+}
+
+.sidebar {
+  grid-area: sidebar;
 }
 
 footer {
   text-align: center;
+  grid-area: footer;
+  border-top: 1px dashed var(--text);
+  padding-top: 20px;
 }
 
 .profile-photo.u-photo {
@@ -212,4 +243,28 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
 
 .post-date.u-url {
   color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+      grid-template-areas:
+          "posts"
+          "sidebar";
+      grid-template-columns: 1fr;
+  }
+
+  .nav a {
+      display: block;
+      margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 24px;
+  }
+
+  .posts .post h2 {
+      font-size: 20px;
+  }
 }

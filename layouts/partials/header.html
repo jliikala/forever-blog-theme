@@ -1,6 +1,11 @@
-<header class="site-header">
+<header class="blog-header">
   <div class="container">
     <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
+    {{ if .Site.Params.blogDescription }}
+    <p class="blog-description">
+      {{ .Site.Params.blogDescription }}
+    </p>
+    {{ end }}
     <nav>
       <ul>
         {{ range .Site.Menus.main }}

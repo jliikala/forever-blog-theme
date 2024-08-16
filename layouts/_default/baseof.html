@@ -2,15 +2,16 @@
 <html lang="{{ .Site.Params.languageCode | default "en" }}">
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
-    <div class="content-area">
-      <main>
-        {{ block "main" . }}{{ end }}
-      </main>
-      {{ partial "sidebar.html" . }}
+    <div class="blog-container">
+      {{ partial "header.html" . }}
+      <div class="content-area">
+        <main class="content-area">
+          <div class="posts">{{ block "main" . }}{{ end }}</div>
+          {{ partial "sidebar.html" . }}
+        </main>
+      </div>
+      {{ partial "footer.html" . }}
     </div>
-    {{ partial "footer.html" . }}
-
     {{ range .Site.Params.plugins_js }}
     <script src="{{ . }}"></script>
     {{ end }}

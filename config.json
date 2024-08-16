@@ -2,6 +2,7 @@
   "paginate": 20,
   "params": {
     "languageCode": "en",
-    "newsletterId": ""
+    "newsletterId": "",
+    "blogDescription": "My mighty fine blog."
   }
 }
