@@ -133,7 +133,7 @@ h6 {
     padding: 20px;
 }
 
-.blog-header {
+.header {
   grid-area: header;
   border-bottom: 1px dashed var(--text);
   padding-bottom: 20px;
@@ -144,27 +144,17 @@ h6 {
   margin: 0 auto;
 }
 
-header {
-  padding: 20px 0;
-}
-
-header .container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 header h1 {
   margin: 0;
   padding: 0;
   color: var(--text);
 }
 
-header h1 a {
+.header h1 a {
   text-decoration: none;
 }
 
-header nav ul {
+.header nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -172,17 +162,17 @@ header nav ul {
   justify-content: flex-end;
 }
 
-header nav ul li {
+.header nav ul li {
   margin-left: 20px;
 }
 
-header nav ul li a {
+.header nav ul li a {
   color: var(--link);
   text-decoration: none;
   font-weight: bold;
 }
 
-.content-area {
+.main-content {
   display: grid;
   grid-template-areas:
       "posts sidebar";
@@ -199,7 +189,7 @@ header nav ul li a {
   grid-area: sidebar;
 }
 
-footer {
+.footer {
   text-align: center;
   grid-area: footer;
   border-top: 1px dashed var(--text);
