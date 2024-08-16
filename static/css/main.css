@@ -3,8 +3,10 @@
   --link: rgb(0, 116, 179);
   --link-visited: rgb(4, 72, 108);
   --background-color: white;
-  --font-family: "-apple-system",BlinkMacSystemFont,"helvetica neue",Helvetica,Arial,sans-serif;
+  --font-family: Inter, "-apple-system",BlinkMacSystemFont,"helvetica neue",Helvetica,Arial,sans-serif;
   --spacing: 1.5rem;
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +16,10 @@
     --link-visited: rgb(4, 72, 108);
     --background-color: black;
   }
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
 }
 
 /* Set a solid baseline for styles with Andy Bell's modern CSS reset - https://piccalil.li/blog/a-modern-css-reset */
@@ -94,7 +100,6 @@ select {
 }
 
 body {
-  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
