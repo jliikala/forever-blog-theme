@@ -177,6 +177,7 @@ header h1 {
 
 .blog-intro {
   display: flex;
+  flex-direction: column;
 }
 
 .blog-description {
