@@ -263,7 +263,6 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
 /* Post list */
 .post-title.p-name a, .post-date.u-url {
   text-decoration: none;
-  font-family: var(--font-family-mono);
 }
 
 .post-date.u-url {
