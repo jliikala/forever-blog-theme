@@ -271,7 +271,7 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   font-size: 14px;
 }
 
-.post-content {
+.p-content {
   padding: 20px 30px;
   background-color: var(--post-bg);
 }
