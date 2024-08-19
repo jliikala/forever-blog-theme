@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{$pages := where .Site.Pages "Type" "post" }}
+<div class="p-content">
   {{ range $pages.GroupByDate "2006" }}
-    <div class="group p-content">
+    <div class="group">
       <h2 class="key">
         {{ .Key }}
       </h2>
@@ -19,5 +20,6 @@
       </p>
     {{ end }}
    {{ end }}
+</div>
 {{ end }}
 {{ end }}
