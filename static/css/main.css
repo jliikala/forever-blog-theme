@@ -189,10 +189,6 @@ header h1 {
   flex-direction: column;
 }
 
-.blog-description {
-  margin-bottom: 0;
-}
-
 .main-content {
   display: grid;
   grid-template-areas:
@@ -217,7 +213,7 @@ header h1 {
   text-align: center;
   grid-area: footer;
   border-top: 1px dashed var(--text);
-  padding: 10px 30px;
+  padding: 30px;
   font-family: var(--font-family-mono);
   font-size: 14px;
 }
@@ -254,6 +250,10 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
 
 .e-content {
   font-family: var(--font-family-serif);
+}
+
+.e-content p:last-of-type {
+  margin-bottom: 0;
 }
 
 .sidebar-partial h3 {
