@@ -67,6 +67,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a:visited {
+  color: var(--link-visited);
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -205,6 +209,8 @@ header h1 {
 .sidebar {
   grid-area: sidebar;
   font-family: var(--font-family-mono);
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .footer {
@@ -212,6 +218,8 @@ header h1 {
   grid-area: footer;
   border-top: 1px dashed var(--text);
   padding: 10px 30px;
+  font-family: var(--font-family-mono);
+  font-size: 14px;
 }
 
 .profile-photo.u-photo {
