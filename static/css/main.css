@@ -360,6 +360,9 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   .blog-container {
     padding: 20px 0;
   }
+  .card {
+    background: none;
+  }
   .header {
     flex-direction: column;
     padding: 20px 0px;
