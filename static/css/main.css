@@ -285,10 +285,6 @@ div.sidebar-partial:last-of-type {
   padding: 20px 30px;
 }
 
-.p-name {
-  margin-bottom: 0;
-}
-
 @media (max-width: 768px) {
   .main-content {
       grid-template-areas:
