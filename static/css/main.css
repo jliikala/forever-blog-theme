@@ -279,13 +279,24 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    padding: 0;
+  }
   .main-content {
       grid-template-areas:
           "posts"
           "sidebar";
       grid-template-columns: 1fr;
   }
+  .header {
+    flex-direction: column;
+  }
 
+  .blog-intro {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
   .nav a {
       display: block;
       margin: 5px 0;
