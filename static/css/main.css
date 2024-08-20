@@ -276,8 +276,12 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   background-color: var(--post-bg);
 }
 
-.page .p-name {
+.page .p-name, .post-header {
   padding: 20px 30px;
+}
+
+.p-name {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
