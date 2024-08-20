@@ -196,6 +196,7 @@ header h1 {
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
   grid-area: content;
+  align-items: flex-start;
 }
 
 .card {
