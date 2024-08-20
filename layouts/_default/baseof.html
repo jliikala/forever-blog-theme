@@ -4,10 +4,10 @@
   <body>
     <div class="blog-container">
       {{ partial "header.html" . }}
-      <main class="main-content">
-        <div class="card">{{ block "main" . }}{{ end }}</div>
-        {{ partial "sidebar.html" . }}
+      <main class="card">
+        {{ block "main" . }}{{ end }}
       </main>
+      {{ partial "sidebar.html" . }}
       {{ partial "footer.html" . }}
     </div>
     {{ range .Site.Params.plugins_js }}
