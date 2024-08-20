@@ -3,6 +3,7 @@
   "languageCode": "en",
   "params": {
     "newsletterId": "",
+    "blogTitle": "Supadupa blog title",
     "blogDescription": "My mighty fine blog."
   }
 }
