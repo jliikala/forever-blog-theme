@@ -67,6 +67,12 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: var(--link);
+  opacity: 1;
+}
+
+a:not([class]):hover {
+  color: var(--link);
+  opacity: 0.8;
 }
 
 a {
