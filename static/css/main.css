@@ -362,6 +362,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   }
   .card {
     background: none;
+    padding: 0;
   }
   .header {
     flex-direction: column;
