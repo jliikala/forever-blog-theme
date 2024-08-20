@@ -17,7 +17,7 @@
     --link: var(--text);
     --link-visited: rgb(91, 91, 91);
     --background-color: #0f0f0f;
-    --post-bg: rgb(91, 91, 91);
+    --post-bg: #0f0f0f;
     --border-color: #4f4f4f;
   }
 }
