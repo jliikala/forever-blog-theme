@@ -333,7 +333,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   text-decoration: none;
 }
 
-textarea.microblog_reply_textarea {
+.microblog_reply_textarea textarea {
   width: 100%;
   max-width: 100%;
 }
