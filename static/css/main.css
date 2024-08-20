@@ -16,7 +16,7 @@
     --text: #c6c6c6;
     --link: var(--text);
     --link-visited: rgb(91, 91, 91);
-    --background-color: #22#0f0f0f;
+    --background-color: #0f0f0f;
     --post-bg: rgb(91, 91, 91);
     --border-color: #4f4f4f;
   }
