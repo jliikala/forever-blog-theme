@@ -233,6 +233,7 @@ header h1 {
   padding: 10px 30px;
   border-radius: 30px;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .read-more:hover, button:hover, input[type="submit"]:hover {
