@@ -1,7 +1,7 @@
 {
   "paginate": 20,
+  "languageCode": "en",
   "params": {
-    "languageCode": "en",
     "newsletterId": "",
     "blogDescription": "My mighty fine blog."
   }
