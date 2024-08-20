@@ -276,9 +276,9 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   background-color: var(--post-bg);
 }
 
-.h-entry .p-name {
+.archive.h-feed .post-title.p-name {
   padding: 0;
-  margin-bottom: inherit;
+  margin-bottom: 1em;
 }
 
 .page .p-name, .post-header, .archive.h-feed .p-name {
