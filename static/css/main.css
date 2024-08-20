@@ -344,8 +344,20 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
           "sidebar";
       grid-template-columns: 1fr;
   }
+  .blog-container {
+    padding: 20px 0;
+  }
   .header {
     flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .footer {
+    padding: 20px 0px;
+  }
+
+  .card {
+    padding: 0;
   }
 
   .blog-intro {
