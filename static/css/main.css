@@ -198,7 +198,7 @@ header h1 {
   grid-area: content;
 }
 
-.posts {
+.card {
   grid-area: posts;
 }
 
@@ -271,9 +271,9 @@ div.sidebar-partial:last-of-type {
   font-size: 14px;
 }
 
-.p-content, .e-content {
+.card {
   padding: 20px 30px;
-  background-color: var(--post-bg);
+  background: var(--post-bg);
 }
 
 @media (max-width: 768px) {
@@ -295,7 +295,7 @@ div.sidebar-partial:last-of-type {
       font-size: 24px;
   }
 
-  .posts .post h2 {
+  .card .post h2 {
       font-size: 20px;
   }
 }
