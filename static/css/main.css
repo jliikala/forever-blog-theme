@@ -253,6 +253,10 @@ input {
   color: var(--text);
 }
 
+.sidebar-partial form {
+  margin-bottom: 1rem;
+}
+
 /* Sidebar */
 
 .sidebar, main .post-list {
