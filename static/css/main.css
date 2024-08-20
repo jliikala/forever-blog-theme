@@ -343,6 +343,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
           "posts"
           "sidebar";
       grid-template-columns: 1fr;
+      padding: 0px 20px;
   }
   .blog-container {
     padding: 20px 0;
