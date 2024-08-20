@@ -3,10 +3,8 @@
     {{ if templates.Exists "partials/microhook-sidebar-bio.html" }}
       {{ partial "microhook-sidebar-bio.html" . }}
     {{ else }}
-    <p class="description">
       {{ .Site.Params.itunes_description | safeHTML }}
-      <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80">
-    </p>
+      <img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile-photo u-photo">
     {{ end }}
   </div>
   <div class="sidebar-partial">

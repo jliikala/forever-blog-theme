@@ -220,10 +220,8 @@ header h1 {
 }
 
 .profile-photo.u-photo {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  max-width: 110px;
+  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
