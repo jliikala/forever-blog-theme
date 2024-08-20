@@ -281,7 +281,7 @@ div.sidebar-partial:last-of-type {
   margin-bottom: 1em;
 }
 
-.page .p-name, .post-header, .archive.h-feed .p-name {
+.page .p-name, .archive.h-feed .p-name {
   padding: 20px 30px;
 }
 
