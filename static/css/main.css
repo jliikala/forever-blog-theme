@@ -221,8 +221,8 @@ header h1 {
 
 .profile-photo.u-photo {
   max-width: 100%;
-  width: 100%;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .read-more, button {
