@@ -1,7 +1,7 @@
 :root {
   --text: #010101;
-  --link: var(--text);
-  --link-visited: rgb(4, 72, 108);
+  --link: #010101;
+  --link-visited: #010101;
   --background-color: #f7f7f7;
   --post-bg: white;
   --font-family: "-apple-system",BlinkMacSystemFont,"helvetica neue",Helvetica,Arial,sans-serif;
@@ -14,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #c6c6c6;
-    --link: var(--text);
+    --link: rgb(91, 91, 91);
     --link-visited: rgb(91, 91, 91);
     --background-color: #0f0f0f;
     --post-bg: #0f0f0f;
