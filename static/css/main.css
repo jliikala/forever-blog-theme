@@ -17,7 +17,7 @@
     --link: rgb(91, 91, 91);
     --link-visited: rgb(91, 91, 91);
     --background-color: #0f0f0f;
-    --post-bg: #0f0f0f;
+    --post-bg: #1e1e1e;
     --border-color: #4f4f4f;
   }
 }
@@ -366,10 +366,6 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 
   .footer {
     padding: 20px 0px;
-  }
-
-  .card {
-    padding: 0;
   }
 
   .blog-intro {
