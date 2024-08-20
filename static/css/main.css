@@ -278,6 +278,22 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   background: var(--post-bg);
 }
 
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #ddd;
+  line-height: 140%;
+  padding: 12px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
 
   body {
