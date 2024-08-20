@@ -276,6 +276,11 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   background-color: var(--post-bg);
 }
 
+.h-entry .p-name {
+  padding: 0;
+  margin-bottom: inherit;
+}
+
 .page .p-name, .post-header, .archive.h-feed .p-name {
   padding: 20px 30px;
 }
