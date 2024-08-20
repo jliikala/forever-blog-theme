@@ -225,7 +225,7 @@ header h1 {
   height: auto;
 }
 
-.read-more {
+.read-more, button {
   text-decoration: none;
   color: var(--text);
   border: 1px solid #d2d2d2;
@@ -234,8 +234,12 @@ header h1 {
   opacity: 0.8;
 }
 
-.read-more:hover {
+.read-more:hover, button:hover {
   opacity: 1;
+}
+
+.read-more:visited {
+  color: var(--text);
 }
 
 /* Sidebar */
