@@ -8,16 +8,17 @@
   --font-family-serif: Georgia, "Times New Roman", "Palatino Linotype" "Book Antiqua", "Garamond", serif;
   --font-family-mono: "JetBrains Mono", "Fira Code", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
   --spacing: 1.5rem;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  --border-color: #4f4f4f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #fafafa;
+    --text: #c6c6c6;
     --link: var(--text);
-    --link-visited: rgb(4, 72, 108);
-    --background-color: #222222;
-    --post-bg: black;
+    --link-visited: rgb(91, 91, 91);
+    --background-color: #22#0f0f0f;
+    --post-bg: rgb(91, 91, 91);
+    --border-color: #4f4f4f;
   }
 }
 
@@ -65,6 +66,10 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:visited {
@@ -217,6 +222,7 @@ header h1 {
   padding: 30px;
   font-family: var(--font-family-mono);
   font-size: 14px;
+  border-color: var(--border-color);
 }
 
 .profile-photo.u-photo {
@@ -268,6 +274,7 @@ input {
 .sidebar-partial {
   border-bottom: 1px dashed;
   padding-bottom: 2rem;
+  border-color: var(--border-color);
 }
 
 div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
@@ -278,6 +285,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 .post-preview {
   border-bottom: 1px dashed;
   padding-bottom: 2rem;
+  border-color: var(--border-color);
 }
 
 .e-content {
