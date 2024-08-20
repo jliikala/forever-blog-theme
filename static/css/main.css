@@ -225,6 +225,19 @@ header h1 {
   height: auto;
 }
 
+.read-more {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid #d2d2d2;
+  padding: 10px 30px;
+  border-radius: 30px;
+  opacity: 0.8;
+}
+
+.read-more:hover {
+  opacity: 1;
+}
+
 /* Sidebar */
 
 .sidebar, main .post-list {
