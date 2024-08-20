@@ -246,14 +246,15 @@ div.sidebar-partial:last-of-type {
 }
 
 .post-preview {
-  background: var(--post-bg);
+  border-bottom: 1px dashed;
+  padding-bottom: 2rem;
 }
 
 .e-content {
   font-family: var(--font-family-serif);
 }
 
-.e-content p:last-child {
+.e-content p:last-child, .sidebar-partial p:last-child {
   margin-bottom: 0;
 }
 
