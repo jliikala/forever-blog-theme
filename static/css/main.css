@@ -271,18 +271,9 @@ div.sidebar-partial:last-of-type {
   font-size: 14px;
 }
 
-.h-entry {
+.p-content, .e-content {
   padding: 20px 30px;
   background-color: var(--post-bg);
-}
-
-.archive.h-feed .post-title.p-name {
-  padding: 0;
-  margin-bottom: 1em;
-}
-
-.page .p-name, .archive.h-feed .p-name {
-  padding: 20px 30px;
 }
 
 @media (max-width: 768px) {
