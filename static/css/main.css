@@ -252,7 +252,7 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   font-family: var(--font-family-serif);
 }
 
-.e-content p:last-of-type {
+.e-content p:last-child {
   margin-bottom: 0;
 }
 
@@ -271,12 +271,12 @@ div.sidebar-partial:last-of-type, div.post-list .post-preview:last-of-type {
   font-size: 14px;
 }
 
-.p-content {
+.post-preview {
   padding: 20px 30px;
   background-color: var(--post-bg);
 }
 
-.page .p-name, .post-header {
+.page .p-name, .post-header, .archive.h-feed .p-name {
   padding: 20px 30px;
 }
 
