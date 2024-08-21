@@ -270,6 +270,14 @@ input {
 
 .sidebar-partial form {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-partial form input {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Sidebar */
