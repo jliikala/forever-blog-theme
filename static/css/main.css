@@ -344,12 +344,12 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   max-width: 100%;
 }
 
-.post .post-header-meta, .post .e-content, .post .microblog_conversation {
+.post .post-header-meta, .post .e-content, .microblog_conversation {
   padding: 20px 30px;
 }
 
 .post .post-header-meta {
-  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
