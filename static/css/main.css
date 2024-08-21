@@ -65,11 +65,11 @@ body {
   line-height: 1.5;
 }
 
-a[class] {
-  text-decoration: none;
+a {
+  color: var(--text);
 }
 
-a:link, a:active, a:hover, a:visited {
+a:not([class]):link, a:not([class]):active, a:not([class]):hover, a:not([class]):visited {
   color: var(--text);
   text-decoration-line: underline;
   text-decoration-thickness: 0.05rem;
@@ -78,11 +78,11 @@ a:link, a:active, a:hover, a:visited {
   font-weight: 400;
 }
 
-a:visited{
+a:not([class]):visited{
   color: var(--link-visited);
 }
 
-a:hover {
+a:not([class]):hover {
   text-decoration-thickness: 0.10rem;
 }
 
