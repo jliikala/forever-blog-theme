@@ -292,8 +292,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding-bottom: 0;
 }
 
-.post-preview {
-  border-color: var(--border-color);
+.post-preview, .single {
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
