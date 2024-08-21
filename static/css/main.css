@@ -291,7 +291,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding-bottom: 0;
 }
 
-.post-preview, .single {
+.single {
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
@@ -344,24 +344,30 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   max-width: 100%;
 }
 
-.post-preview .post-header, .single .post-header {
+.single .post-header {
   padding: 20px 30px 0px 30px;
 }
 
-.post-preview .post-header .post-title {
+.post-title {
   margin-bottom: 0;
 }
 
-.post-preview .e-content, .single .e-content {
+.single .e-content {
   padding: 20px 30px;
 }
 
-.post-preview .p-summary, .single .microblog_conversation {
+.single .microblog_conversation {
   padding: 0px 30px 20px 30px;
 }
 
 .post .post-header-meta {
   padding-bottom: 0;
+}
+
+.post-preview-content {
+  padding: 20px 30px;
+  background: var(--post-bg);
+  box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
 
 @media (max-width: 768px) {
