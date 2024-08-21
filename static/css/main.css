@@ -75,7 +75,6 @@ a:not([class]):link, a:not([class]):active, a:not([class]):hover, a:not([class])
   text-decoration-thickness: 0.05rem;
   text-underline-offset: 0.2rem;
   text-decoration-color: var(--text);
-  font-weight: 400;
 }
 
 a:not([class]):visited{
