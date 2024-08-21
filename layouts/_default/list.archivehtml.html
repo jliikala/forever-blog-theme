@@ -1,6 +1,12 @@
 {{ define "main" }}
+{{ $slug := .File.BaseFileName }}
+{{ $cover := index .Site.Data.covers $slug }}
   {{$pages := where .Site.Pages "Type" "post" }}
-  <div class="p-content">
+  {{ if $cover }}
+    <img src="{{ $cover.image }}" alt="Cover Image">
+  {{ end }}
+  <div class="post-card">
+    <div class="p-content">
     {{ range $pages.GroupByDate "2006" }}
       <div class="group">
         <h2 class="key">{{ .Key }}</h2>
@@ -27,4 +33,5 @@
       </div> <!-- End of yearly group -->
     {{ end }} <!-- End of main loop -->
   </div>
+</div>
 {{ end }}
