@@ -65,10 +65,6 @@ body {
   line-height: 1.5;
 }
 
-a {
-  color: var(--link);
-}
-
 /* A elements that don't have a class get default styles */
 a:link, a:visited, a:hover, a:active {
   color: var(--link);
