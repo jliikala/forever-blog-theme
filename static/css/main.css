@@ -345,6 +345,16 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding: 20px 30px;
 }
 
+.post-preview .post-header {
+  padding: 20px 30px 0px 30px;
+}
+
+.post-preview .e-content {
+  padding: 20px 30px;
+}
+
+
+
 .post .post-header-meta {
   padding-bottom: 0;
 }
