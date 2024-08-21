@@ -216,7 +216,6 @@ header h1 {
 
 .card {
   grid-area: posts;
-  padding: 20px 30px;
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
