@@ -1,27 +1,30 @@
 {{ define "main" }}
 {{$pages := where .Site.Pages "Type" "post" }}
-<div class="p-content">
-  {{ range $pages.GroupByDate "2006" }}
-    <div class="group">
-      <h2 class="key">
-        {{ .Key }}
-      </h2>
-      {{ range .Pages.GroupByDate "January" }}
-        <h3 class="key">
-        {{ .Key }}
-        </h3>
-      {{ range .Pages }}
-      <p class="h-entry">
-        <a href="{{ .Permalink }}" class="u-url">
-          <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-        </a>:
-        {{ if .Title }}
-        <span class="p-name"><b>{{ .Title }}</b></span>
+{{ $slug := .File.BaseFileName }}
+{{ $cover := index .Site.Data.covers $slug }}
+{{ if $cover }}
+    <img src="{{ $cover.image }}" alt="Cover Image">
+  {{ end }}
+  <div class="post-card">
+    <div class="p-content">
+      {{ range $pages.GroupByDate "2006" }}
+        <div class="group">
+          <h2 class="key">{{ .Key }}</h2>
+          {{ range .Pages.GroupByDate "January" }}
+            <h3 class="key">{{ .Key }}</h3>
+          {{ range .Pages }}
+          <p class="h-entry">
+            <a href="{{ .Permalink }}" class="u-url">
+              <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            </a>:
+            {{ if .Title }}
+            <span class="p-name"><b>{{ .Title }}</b></span>
+            {{ end }}
+            <span class="p-summary">{{ .Summary | truncate 150 }}</span>
+          </p>
         {{ end }}
-        <span class="p-summary">{{ .Summary | truncate 150 }}</span>
-      </p>
-    {{ end }}
-   {{ end }}
-</div>
+       {{ end }}
+    </div>
+  </div>
 {{ end }}
 {{ end }}
