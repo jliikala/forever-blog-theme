@@ -3,17 +3,17 @@
 {{ $cover := index .Site.Data.covers $slug }}
   {{$pages := where .Site.Pages "Type" "post" }}
   {{ if $cover }}
-    <img src="{{ $cover.image }}" alt="alt="Post cover for {{ if .Title }}{{ .Title }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}"">
+    <img src="{{ $cover.image }}" alt="Post cover for {{ if .Title }}{{ .Title }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}">
   {{ end }}
   <div class="post-card">
     <div class="p-content">
     {{ range $pages.GroupByDate "2006" }}
       <div class="year">
-        <h2 class="key">{{ .Key }}</h2>
+        <h2>{{ .Key }}</h2>
 
         {{ range .Pages.GroupByDate "January" }}
           <div class="month">
-            <h3 class="key">{{ .Key }}</h3>
+            <h3>{{ .Key }}</h3>
 
             {{ range .Pages }}
               <p class="h-entry">
