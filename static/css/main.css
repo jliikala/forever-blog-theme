@@ -395,12 +395,23 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .microblog_time a {
   text-decoration: none !important;
   font-family: var(--font-family-mono);
   font-size: 14px;
+}
+
+.microblog_avatar {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 40px !important;
+}
+
+.microblog_fullname {
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
