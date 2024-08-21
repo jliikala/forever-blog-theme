@@ -8,12 +8,12 @@
   <div class="post-card">
     <div class="p-content">
     {{ range $pages.GroupByDate "2006" }}
-      <div class="group">
-        <h2 class="key">{{ .Key }}</h2>
+      <div class="year">
+        <h2>{{ .Key }}</h2>
 
         {{ range .Pages.GroupByDate "January" }}
-          <div class="sub-group">
-            <h3 class="key">{{ .Key }}</h3>
+          <div class="month">
+            <h3>{{ .Key }}</h3>
 
             {{ range .Pages }}
               <p class="h-entry">
@@ -25,13 +25,13 @@
                 {{ end }}
                 <span class="p-summary">{{ .Summary | truncate 150 }}</span>
               </p>
-            {{ end }} <!-- End of individual post loop -->
+            {{ end }}
 
-          </div> <!-- End of sub-group -->
-        {{ end }} <!-- End of January grouping -->
+          </div>
+        {{ end }}
 
-      </div> <!-- End of yearly group -->
-    {{ end }} <!-- End of main loop -->
+      </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}
