@@ -364,10 +364,14 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding-bottom: 0;
 }
 
-.post-card {
+.post-card, .post-nav {
   padding: 20px 30px;
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
+}
+
+.post-nav {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
