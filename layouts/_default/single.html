@@ -1,5 +1,10 @@
 {{ define "main" }}
+{{ $slug := .File.BaseFileName }}
+{{ $cover := index .Site.Data.covers $slug }}
 <div class="page">
+  {{ if $cover }}
+    <img src="{{ $cover.image }}" alt="Cover Image">
+  {{ end }}
   {{ if .Title }}
   <h2 class="p-name">{{ .Title }}</h2>
   {{ end }}
