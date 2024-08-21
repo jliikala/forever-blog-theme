@@ -15,11 +15,11 @@
                 <div class="p-summary">
                     {{ $splitContents := split .RawContent "<!--more-->" }}
                     {{ index $splitContents 0 | markdownify }}
-                    <p>
-                      <a class="read-more" href="{{ .Permalink }}">
-                      Continue reading →
-                    </a>
-                  </p>
+                    <div class="read-more">
+                      <a href="{{ .Permalink }}">
+                        Continue reading →
+                      </a>
+                    </div>
                 </div>
                 {{ else }}
                 <div class="e-content">

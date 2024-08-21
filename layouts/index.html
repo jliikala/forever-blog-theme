@@ -27,11 +27,11 @@
 							{{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
 							{{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
 							<p>{{ $summary | markdownify }}</p>
-							<p>
-								<a class="read-more" href="{{ .Permalink }}">
+							<div class="read-more">
+								<a href="{{ .Permalink }}">
 									Continue reading →
 								</a>
-							</p>
+							</div>
 						</div>
 					{{ else }}
 						<div class="e-content with-title">

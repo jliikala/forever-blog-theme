@@ -250,7 +250,12 @@ input {
   opacity: 0.8;
 }
 
-.read-more, button, input[type="submit"] {
+.read-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more a, button, input[type="submit"] {
   text-decoration: none;
   color: var(--text);
   border: 1px solid #d2d2d2;
@@ -260,11 +265,11 @@ input {
   cursor: pointer;
 }
 
-.read-more:hover, button:hover, input[type="submit"]:hover {
+.read-more a:hover, button:hover, input[type="submit"]:hover {
   opacity: 1;
 }
 
-.read-more:visited {
+.read-more a:visited {
   color: var(--text);
 }
 
