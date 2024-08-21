@@ -70,7 +70,7 @@ a {
 }
 
 /* A elements that don't have a class get default styles */
-a, a:visited, a:hover, a:active {
+a:link, a:visited, a:hover, a:active {
   color: var(--link);
   text-decoration-line: underline;
   text-decoration-thickness: 0.1rem;
