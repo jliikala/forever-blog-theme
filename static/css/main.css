@@ -79,7 +79,7 @@ a:visited{
   color: var(--link-visited);
 }
 
-a:not([class]):hover {
+a:hover {
   text-decoration-thickness: 0.15rem;
 }
 
