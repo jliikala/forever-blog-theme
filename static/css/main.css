@@ -216,8 +216,6 @@ header h1 {
 
 .card {
   grid-area: posts;
-  background: var(--post-bg);
-  box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
 
 .sidebar {
@@ -295,9 +293,9 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 .post-preview {
-  border-bottom: 1px dashed;
-  padding-bottom: 2rem;
   border-color: var(--border-color);
+  background: var(--post-bg);
+  box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
 
 .e-content {
