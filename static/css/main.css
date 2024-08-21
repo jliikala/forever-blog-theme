@@ -364,7 +364,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding-bottom: 0;
 }
 
-.post-card, .post-nav {
+.post-card, .post-nav, .microblog_conversation {
   padding: 20px 30px;
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
@@ -374,6 +374,18 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.microblog_conversation {
+  margin-top: 2rem;
+}
+
+.microblog_conversation::before {
+  content: 'Replies';
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
