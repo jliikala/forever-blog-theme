@@ -255,6 +255,10 @@ input {
   justify-content: flex-end;
 }
 
+.read-more a {
+  text-decoration: none !important;
+}
+
 .read-more a, button, input[type="submit"] {
   text-decoration: none;
   color: var(--text);
