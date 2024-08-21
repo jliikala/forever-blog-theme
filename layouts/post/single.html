@@ -3,7 +3,9 @@
 {{ $cover := index .Site.Data.covers $slug }}
 
   {{ if $cover }}
-    <img src="{{ $cover.image }}" alt="Cover Image">
+  <a href="{{ .Permalink }}" class="post-date u-url">
+    <img src="{{ $cover.image }}" alt="Cover for ">
+  </a>
   {{ end }}
     <div class="post-card">
       <div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
