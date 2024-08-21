@@ -9,7 +9,7 @@
 				{{ if $cover }}
 					<img class="post-cover" src="{{ $cover.image }}" alt="Post cover for {{ if .Title }}{{ .Title }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}">
 				{{ end }}
-				<div class="post-preview-content">
+				<div class="post-card">
 					<header class="post-header">
 						<a href="{{ .Permalink }}" class="post-date u-url">
 							<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time>

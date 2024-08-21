@@ -364,7 +364,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding-bottom: 0;
 }
 
-.post-preview-content {
+.post-card {
   padding: 20px 30px;
   background: var(--post-bg);
   box-shadow: var(--box-shadow-color) 0 6px 24px;
