@@ -371,7 +371,9 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 .post-nav {
-  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
