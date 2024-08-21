@@ -356,8 +356,8 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   padding: 20px 30px;
 }
 
-.single .microblog_conversation {
-  padding: 0px 30px 20px 30px;
+.microblog_conversation {
+  margin-top: 2rem;
 }
 
 .post .post-header-meta {
