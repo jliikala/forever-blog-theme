@@ -6,41 +6,37 @@
 			{{ $slug := .File.BaseFileName }}
   		{{ $cover := index .Site.Data.covers $slug }}
       <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-        <div>
-					<header class="post-header">
-						{{ if $cover }}
-						<img src="{{ $cover.image }}" alt="Cover Image">
-						{{ end }}
-						<div class="post-header-meta">
-							<a href="{{ .Permalink }}" class="post-date u-url">
-								<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time>
-							</a>
-							{{ if .Title }}
-							<h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-							{{ end }}
-						</div>
-					</header>
-					{{ if in .RawContent "<!--more-->" }}
-						<div class="p-summary">
-							{{ $splitContents := split .RawContent "<!--more-->" }}
-							{{ $summary := index $splitContents 0 }}
-							{{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
-							{{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
-							<p>{{ $summary | markdownify }}</p>
-							<p>
-								<a class="read-more" href="{{ .Permalink }}">
-									Continue reading →
-								</a>
-							</p>
-						</div>
-					{{ else }}
-						<div class="e-content with-title">
-								{{ .Content }}
-						</div>
+				{{ if $cover }}
+					<img class="post-cover" src="{{ $cover.image }}" alt="Post cover for {{ if .Title }}{{ .Title }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}">
+				{{ end }}
+				<header class="post-header">
+					<a href="{{ .Permalink }}" class="post-date u-url">
+						<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time>
+					</a>
+					{{ if .Title }}
+					<h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 					{{ end }}
-        </div>
-      </div>
-      {{ end }}
+				</header>
+				{{ if in .RawContent "<!--more-->" }}
+					<div class="p-summary">
+						{{ $splitContents := split .RawContent "<!--more-->" }}
+						{{ $summary := index $splitContents 0 }}
+						{{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+						{{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+						<p>{{ $summary | markdownify }}</p>
+						<p>
+							<a class="read-more" href="{{ .Permalink }}">
+								Continue reading →
+							</a>
+						</p>
+					</div>
+				{{ else }}
+					<div class="e-content with-title">
+							{{ .Content }}
+					</div>
+				{{ end }}
+		</div>
+		{{ end }}
   </div>
 </div>
 {{ end }}
