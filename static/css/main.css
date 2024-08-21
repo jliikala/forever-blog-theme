@@ -9,6 +9,7 @@
   --font-family-mono: "JetBrains Mono", "Fira Code", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
   --spacing: 1.5rem;
   --border-color: #4f4f4f;
+  --box-shadow-color: rgba(145,106,112,0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --background-color: #0f0f0f;
     --post-bg: #1e1e1e;
     --border-color: #4f4f4f;
+    --box-shadow-color: transparent;
   }
 }
 
@@ -214,6 +216,9 @@ header h1 {
 
 .card {
   grid-area: posts;
+  padding: 20px 30px;
+  background: var(--post-bg);
+  box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
 
 .sidebar {
@@ -319,11 +324,6 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   font-size: 14px;
 }
 
-.card {
-  padding: 20px 30px;
-  background: var(--post-bg);
-}
-
 .sidebar ul {
   list-style: none;
   margin: 0;
@@ -363,6 +363,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   .card {
     background: none;
     padding: 0;
+    box-shadow: none;
   }
   .header {
     flex-direction: column;
