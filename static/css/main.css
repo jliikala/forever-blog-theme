@@ -204,8 +204,12 @@ h6 {
   height: auto;
   margin-bottom: 2rem;
   border-radius: 100%;
+  position: absolute;
+  top: 330px;
+  width: 160px;
+  padding: 10px;
+  background: var(--background-color);
 }
-
 
 input {
   color: var(--text);
@@ -395,6 +399,12 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 
 .microblog_fullname {
   font-weight: 600;
+}
+
+.post-cover {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 768px) {
