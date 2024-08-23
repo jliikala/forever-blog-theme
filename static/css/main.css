@@ -180,12 +180,13 @@ h6 {
 
 .card {
   grid-area: posts;
+  margin-top: 4rem;
 }
 
 .sidebar {
   grid-area: sidebar;
   font-family: var(--font-family-mono);
-  margin-top: 20px;
+  margin-top: 1rem;
   font-size: 14px;
 }
 
