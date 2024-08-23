@@ -4,7 +4,7 @@
       {{ partial "microhook-sidebar-bio.html" . }}
     {{ else }}
       <a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile-photo u-photo"></a>
-      <h1 class="site-title"><a href="/">{{ .Site.Title }}</h1>
+      <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
       {{ .Site.Params.itunes_description | safeHTML }}
     {{ end }}
   </div>
