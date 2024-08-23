@@ -3,14 +3,7 @@
   <div class="post-list" role="main">
       {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
       {{ range .Paginator.Pages }}
-			{{ $slug := .File.BaseFileName }}
-  		{{ $cover := index .Site.Data.covers $slug }}
       <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-				{{ if $cover }}
-					<a href="{{ .Permalink }}" class="post-date u-url">
-						<img class="post-cover" src="{{ $cover.image }}" alt="Post cover for {{ if .Title }}{{ .Title }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}">
-					</a>
-				{{ end }}
 				<div class="post-card">
 					<header class="post-header">
 						<a href="{{ .Permalink }}" class="post-date u-url">

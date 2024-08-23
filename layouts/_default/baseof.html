@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   {{ partial "head.html" . }}
+  {{ if .File }}
+  {{ $slug := .File.BaseFileName }}
+  {{ $cover := index .Site.Data.covers $slug }}
+  {{ end }}
   <body>
+    <div class="post-cover"
+        style="background-image: url('{{ if and .File (index .Site.Data.covers (.File.BaseFileName)).image }}{{ (index .Site.Data.covers (.File.BaseFileName)).image }}{{ else }}{{ "default-cover.jpg" | relURL }}{{ end }}');">
+    </div>
     <div class="blog-container">
-      {{ partial "header.html" . }}
       <div class="main-content">
+        {{ partial "sidebar.html" . }}
         <main class="card">
           {{ block "main" . }}{{ end }}
         </main>
-        {{ partial "sidebar.html" . }}
       </div>
       {{ partial "footer.html" . }}
     </div>

@@ -149,7 +149,6 @@ h6 {
 .blog-container {
   display: grid;
     grid-template-areas:
-        "header"
         "content"
         "footer";
     grid-template-rows: auto 1fr auto;
@@ -159,45 +158,9 @@ h6 {
     padding: 20px;
 }
 
-.header {
-  grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
 .container {
   max-width: 80em;
   margin: 0 auto;
-}
-
-header h1 {
-  margin: 0;
-  padding: 0;
-  color: var(--text);
-}
-
-.header h1 a {
-  text-decoration: none;
-}
-
-.header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header nav ul li {
-  margin-left: 20px;
-}
-
-.header nav ul li a {
-  color: var(--link);
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .blog-intro {
@@ -208,8 +171,8 @@ header h1 {
 .main-content {
   display: grid;
   grid-template-areas:
-      "posts sidebar";
-  grid-template-columns: 2fr 1fr;
+      "sidebar posts";
+  grid-template-columns: 1fr 2fr;
   gap: 3rem;
   grid-area: content;
   align-items: flex-start;
@@ -454,9 +417,6 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
     padding: 0;
     box-shadow: none;
   }
-  .header {
-    flex-direction: column;
-  }
 
   .footer {
     padding: 20px 0px;
@@ -473,9 +433,6 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 @media (max-width: 480px) {
-  .header h1 {
-      font-size: 24px;
-  }
 
   .card .post h2 {
       font-size: 20px;
