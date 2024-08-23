@@ -477,5 +477,6 @@ input:disabled, textarea:disabled {
     position: relative;
     width: 100px;
     top: auto;
+    margin-bottom: 0;
   }
 }
