@@ -296,6 +296,10 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   margin-top: 0;
 }
 
+.archive-categories {
+  margin-top: 2 rem;
+}
+
 .sidebar-partial .archive-categories a {
   text-decoration: none !important;
 }
