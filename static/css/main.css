@@ -417,14 +417,13 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   text-decoration: none !important;
 }
 
-input:disabled {
+input:disabled, textarea:disabled {
   background-color: #f0f0f0;
   color: #999;
   border: 1px solid #ccc;
   cursor: not-allowed;
   opacity: 0.6;
 }
-
 
 @media (max-width: 768px) {
 
