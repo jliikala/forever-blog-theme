@@ -311,6 +311,10 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   font-size: 14px;
 }
 
+a.post-date:hover::after {
+  content: " 🔗";
+}
+
 .sidebar ul {
   list-style: none;
   margin: 0;
