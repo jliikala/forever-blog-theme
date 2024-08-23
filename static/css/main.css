@@ -476,5 +476,6 @@ input:disabled, textarea:disabled {
   .profile-photo.u-photo {
     position: relative;
     width: 100px;
+    top: auto;
   }
 }
