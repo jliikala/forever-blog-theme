@@ -373,7 +373,8 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   font-weight: bold;
   font-size: 19px;
   line-height: 28px;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  display: block;
 }
 .microblog_post {
   margin-bottom: 2rem;
