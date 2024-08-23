@@ -418,6 +418,9 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 input:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  border: 1px solid #ccc;
   cursor: not-allowed;
   opacity: 0.6;
 }
