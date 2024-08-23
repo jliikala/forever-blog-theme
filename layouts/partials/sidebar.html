@@ -23,6 +23,8 @@
         <span>Subscribe to this blog <a href="{{ .Site.RSSLink }}">via RSS feed</a>.</span>
       {{ end }}
     {{ end }}
+  </div>
+  <div class="sidebar-partial">
     <h3>On this blog</h3>
     <nav>
       <ul>
@@ -35,8 +37,6 @@
         {{ end }}
       </ul>
     </nav>
-  </div>
-  <div class="sidebar-partial">
     {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     {{ if gt (len $list) 0 }}
     <div class="archive-categories">
