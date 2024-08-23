@@ -412,7 +412,7 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
 }
 
 .site-title a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
