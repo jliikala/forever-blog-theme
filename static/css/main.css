@@ -407,6 +407,14 @@ div.sidebar-partial:last-of-type, div.post-preview:last-of-type {
   background-position: center;
 }
 
+.site-title {
+  margin-top: 3rem;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
 
   body {
