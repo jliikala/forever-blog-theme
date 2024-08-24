@@ -521,6 +521,7 @@ input:disabled, textarea:disabled {
   .profile-photo.u-photo {
     top: 140px;
     width: 120px;
+    padding: 5px;
   }
 
   .sidebar-navigation h3 {
