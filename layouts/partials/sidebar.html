@@ -1,5 +1,5 @@
 <aside class="sidebar">
-  <div class="sidebar-partial">
+  <div class="sidebar-partial sidebar-bio">
     {{ if templates.Exists "partials/microhook-sidebar-bio.html" }}
       {{ partial "microhook-sidebar-bio.html" . }}
     {{ else }}
@@ -8,7 +8,7 @@
       {{ .Site.Params.itunes_description | safeHTML }}
     {{ end }}
   </div>
-  <div class="sidebar-partial">
+  <div class="sidebar-partial sidebar-subscribe">
     {{ if templates.Exists "partials/microhook-sidebar-subscribe.html" }}
       {{ partial "microhook-sidebar-subscribe.html" . }}
     {{ else }}
@@ -24,7 +24,7 @@
       {{ end }}
     {{ end }}
   </div>
-  <div class="sidebar-partial">
+  <div class="sidebar-partial sidebar-navigation">
     <h3>On this blog</h3>
     <nav class="blog-menu">
       <ul>

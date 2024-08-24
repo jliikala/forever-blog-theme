@@ -477,8 +477,8 @@ input:disabled, textarea:disabled {
   }
   .main-content {
       grid-template-areas:
-          "posts"
-          "sidebar";
+          "sidebar"
+          "posts";
       grid-template-columns: 1fr;
       padding: 0px 20px;
   }
@@ -489,6 +489,7 @@ input:disabled, textarea:disabled {
     background: none;
     padding: 0;
     box-shadow: none;
+    margin-top: 0;
   }
 
   .footer {
@@ -502,6 +503,31 @@ input:disabled, textarea:disabled {
   .nav a {
       display: block;
       margin: 5px 0;
+  }
+
+  .post-cover {
+    height: 20vh;
+  }
+
+  .profile-photo.u-photo {
+    top: 200px;
+    width: 120px;
+  }
+
+  .sidebar-navigation .blog-menu h3 {
+    display: none
+  }
+
+  .sidebar-navigation .blog-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sidebar-navigation .blog-menu ul li {
+    border-bottom: none;
+  }
+
+  .sidebar-navigation .archive-categories {
+    display: none;
   }
 }
 
