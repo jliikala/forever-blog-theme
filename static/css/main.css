@@ -273,6 +273,7 @@ input[type="text"] {
 .read-more {
   display: flex;
   justify-content: flex-end;
+  margin-top: 2rem;
 }
 
 .read-more a, button, input[type="submit"] {
