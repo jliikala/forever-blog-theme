@@ -288,7 +288,7 @@ input[type="text"] {
 
 .read-more a {
   text-decoration: none !important;
-  background-color: none !important;
+  background-color: transparent !important;
 }
 
 .read-more a:hover, button:hover, input[type="submit"]:hover {
