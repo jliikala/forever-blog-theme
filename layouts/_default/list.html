@@ -35,6 +35,7 @@
       {{ end }}
     </div>
   </div>
+  {{ if or $paginator.HasPrev $paginator.HasNext }}
   <div class="post-nav">
     {{ if $paginator.HasPrev }}
     <span class="prev">
@@ -48,4 +49,5 @@
     {{ end }}
   </div>
 </div>
+{{ end }}
 {{ end }}
