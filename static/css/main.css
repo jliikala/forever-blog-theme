@@ -146,6 +146,35 @@ h6 {
   font-family: var(--font-family);
 }
 
+small, cite {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #abb0b3;
+  font-weight: 500;
+  display: block;
+  font-style: normal;
+}
+
+blockquote {
+  border-left: 4px solid #f2f6f9;
+  padding-left: 24px;
+  font-weight: 500;
+  color: #252626;
+}
+
+cite {
+  margin: 12px 0;
+}
+
+article ol li, article ul li {
+  margin-left: 24px;
+  padding-bottom: 8px;
+}
+article ul li {
+  list-style: circle;
+}
+
 .blog-container {
   display: grid;
     grid-template-areas:
@@ -183,11 +212,19 @@ h6 {
   margin-top: 4rem;
 }
 
+.card img {
+  margin-bottom: 2rem;
+}
+
 .sidebar {
   grid-area: sidebar;
   font-family: var(--font-family-mono);
   margin-top: 1rem;
   font-size: 14px;
+}
+
+.sidebar nav a:hover {
+  font-weight: 600;
 }
 
 .footer {

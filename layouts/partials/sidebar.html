@@ -26,7 +26,7 @@
   </div>
   <div class="sidebar-partial">
     <h3>On this blog</h3>
-    <nav>
+    <nav class="blog-menu">
       <ul>
         {{ range .Site.Menus.main }}
           {{ if .Page.Params.redirect_url }}
@@ -41,18 +41,20 @@
     {{ if gt (len $list) 0 }}
     <div class="archive-categories">
       <h3>Categories</h3>
-      <ul>
-        {{ range $list }}
-        {{ $categoryName := .Title }}
-        {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
-        {{ if gt $postCount 0 }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-          ({{ $postCount }})
-        </li>
-        {{ end }}
-        {{ end }}
-      </ul>
+      <nav class="category-menu">
+        <ul>
+          {{ range $list }}
+          {{ $categoryName := .Title }}
+          {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
+          {{ if gt $postCount 0 }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            ({{ $postCount }})
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </nav>
     </div>
     {{ end }}
   </div>
