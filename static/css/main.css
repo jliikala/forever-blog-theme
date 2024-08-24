@@ -243,7 +243,7 @@ article ul li {
   margin-bottom: 2rem;
   border-radius: 100%;
   position: absolute;
-  top: 330px;
+  top: 240px;
   width: 160px;
   padding: 10px;
   background: var(--background-color);
@@ -449,7 +449,7 @@ a.post-date:hover::after {
 }
 
 .post-cover {
-  height: 30vh;
+  height: 300px;
   background-size: cover;
   background-position: center;
 }
@@ -506,15 +506,15 @@ input:disabled, textarea:disabled {
   }
 
   .post-cover {
-    height: 20vh;
+    height: 200px;
   }
 
   .profile-photo.u-photo {
-    top: 200px;
+    top: 140px;
     width: 120px;
   }
 
-  .sidebar-navigation .blog-menu h3 {
+  .sidebar-navigation h3 {
     display: none
   }
 
