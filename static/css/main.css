@@ -260,10 +260,14 @@ article ul li {
 
 input {
   color: var(--text);
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--border-color);
   padding: 10px 30px;
   border-radius: 30px;
   opacity: 0.8;
+}
+
+input[type="text"] {
+  color: #010101;
 }
 
 .read-more {
@@ -278,7 +282,7 @@ input {
 .read-more a, button, input[type="submit"] {
   text-decoration: none;
   color: var(--text);
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--border-color);
   padding: 10px 30px;
   border-radius: 30px;
   opacity: 0.8;
@@ -372,7 +376,7 @@ a.post-date:hover::after {
 }
 
 .sidebar ul li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
   line-height: 140%;
   padding: 12px 0;
 }
