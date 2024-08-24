@@ -3,7 +3,7 @@
     {{ if templates.Exists "partials/microhook-sidebar-bio.html" }}
       {{ partial "microhook-sidebar-bio.html" . }}
     {{ else }}
-      <a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile-photo u-photo"></a>
+      <a href="/"><img src="{{ if .Site.Params.itunes_cover }}{{ .Site.Params.itunes_cover }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" alt="{{ .Site.Title }} Profile Photo" class="profile-photo u-photo"></a>
       <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
       {{ .Site.Params.itunes_description | safeHTML }}
     {{ end }}
