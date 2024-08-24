@@ -25,10 +25,11 @@
     {{ end }}
   </div>
   <div class="sidebar-partial sidebar-navigation">
+    {{ with .Site.Menus.main }}
     <h3>On this blog</h3>
     <nav class="blog-menu">
       <ul>
-        {{ range .Site.Menus.main }}
+        {{ range . }}
           {{ if .Page.Params.redirect_url }}
             <li><a class="page-link {{ .Name }}" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
           {{ else }}
@@ -37,21 +38,21 @@
         {{ end }}
       </ul>
     </nav>
-    {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    {{ if gt (len $list) 0 }}
+    {{ end }}
+    {{ with ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     <div class="archive-categories">
       <h3>Categories</h3>
       <nav class="category-menu">
         <ul>
-          {{ range $list }}
-          {{ $categoryName := .Title }}
-          {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
-          {{ if gt $postCount 0 }}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            ({{ $postCount }})
-          </li>
-          {{ end }}
+          {{ range . }}
+            {{ $categoryName := .Title }}
+            {{ $postCount := len (where $.Site.RegularPages "Params.categories" "intersect" (slice $categoryName)) }}
+            {{ if gt $postCount 0 }}
+              <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                ({{ $postCount }})
+              </li>
+            {{ end }}
           {{ end }}
         </ul>
       </nav>
