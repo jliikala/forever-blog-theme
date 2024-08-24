@@ -275,10 +275,6 @@ input[type="text"] {
   justify-content: flex-end;
 }
 
-.read-more a {
-  text-decoration: none !important;
-}
-
 .read-more a, button, input[type="submit"] {
   text-decoration: none;
   color: var(--text);
@@ -288,6 +284,11 @@ input[type="text"] {
   opacity: 0.8;
   cursor: pointer;
   background-color: var(--btn-background);
+}
+
+.read-more a {
+  text-decoration: none !important;
+  background-color: none !important;
 }
 
 .read-more a:hover, button:hover, input[type="submit"]:hover {
