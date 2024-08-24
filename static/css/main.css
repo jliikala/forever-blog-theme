@@ -419,7 +419,7 @@ a.post-date:hover::after {
 .post-nav {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .microblog_conversation {
