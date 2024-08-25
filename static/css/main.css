@@ -239,12 +239,12 @@ article ul li {
 
 .profile-photo.u-photo {
   max-width: 100%;
-  height: auto;
   margin-bottom: 2rem;
   border-radius: 100%;
   position: absolute;
   top: 240px;
   width: 160px;
+  height: 160px;
   padding: 10px;
   background: var(--background-color);
 }
@@ -527,6 +527,7 @@ input:disabled, textarea:disabled {
   .profile-photo.u-photo {
     top: 140px;
     width: 120px;
+    height: 120px;
     padding: 5px;
   }
 
