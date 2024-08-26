@@ -136,6 +136,10 @@ blockquote {
   margin-bottom: var(--spacing);
 }
 
+ul, ol {
+  padding-left: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -168,7 +172,6 @@ cite {
 }
 
 article ol li, article ul li {
-  margin-left: 24px;
   padding-bottom: 8px;
 }
 article ul li {
