@@ -207,13 +207,9 @@ article ul li {
   align-items: flex-start;
 }
 
-.card {
+.blog-container main {
   grid-area: posts;
   margin-top: 4rem;
-}
-
-.card img {
-  margin-bottom: 2rem;
 }
 
 .sidebar {
@@ -418,6 +414,10 @@ a.post-date:hover::after {
   box-shadow: var(--box-shadow-color) 0 6px 24px;
 }
 
+.post-card img {
+  margin-bottom: 2rem;
+}
+
 .post-nav {
   margin-top: 2rem;
   display: flex;
@@ -500,15 +500,12 @@ input:disabled, textarea:disabled {
   .blog-container {
     padding: 20px 0;
   }
-  .card {
-    background: none;
-    padding: 0;
-    box-shadow: none;
+  .blog-container main {
     margin-top: 0;
   }
 
   .footer {
-    padding: 20px 0px;
+    padding: 30px 20px;
   }
 
   .blog-intro {
@@ -550,7 +547,7 @@ input:disabled, textarea:disabled {
 
 @media (max-width: 480px) {
 
-  .card .post h2 {
+  .blog-container main .post h2 {
       font-size: 20px;
   }
 }
