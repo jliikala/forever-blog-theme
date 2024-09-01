@@ -239,7 +239,6 @@ article ul li {
 .profile-photo.u-photo {
   max-width: 100%;
   margin-bottom: 2rem;
-  border-radius: 100%;
   position: absolute;
   top: 240px;
   width: 160px;
@@ -266,7 +265,6 @@ input {
   color: var(--text);
   border: 1px solid var(--border-color);
   padding: 10px 30px;
-  border-radius: 30px;
   opacity: 0.8;
 }
 
@@ -285,7 +283,6 @@ input[type="text"] {
   color: var(--text);
   border: 1px solid var(--border-color);
   padding: 10px 30px;
-  border-radius: 30px;
   opacity: 0.8;
   cursor: pointer;
   background-color: var(--btn-background);
@@ -462,7 +459,6 @@ a.post-date:hover::after {
 }
 
 .microblog_avatar {
-  border-radius: 50%;
   width: 100%;
   max-width: 40px !important;
 }

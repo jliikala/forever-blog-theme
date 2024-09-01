@@ -14,7 +14,6 @@
 	}
 
 	.email-profile-photo {
-		border-radius: 80px;
 		vertical-align: middle;
 		max-width: 80px;
 	}
@@ -26,7 +25,6 @@
 	}
 
 	img {
-		border-radius: 5px;
 		width: 100%;
 		height: auto;
 		max-width: 1000px;
@@ -44,7 +42,7 @@
 </style>
 
 <div class="microblog_email">
-	<img src="{{ .Site.Author.avatar }}" width="80" height="80" alt="Profile icon" class="email-profile-photo" style="border-radius: 80px;">
+	<img src="{{ .Site.Author.avatar }}" width="80" height="80" alt="Profile icon" class="email-profile-photo">
 	<h2>{{ .Site.Title }}</h2>
 
 	{{ if gt (len .Intro) 0 }}
