@@ -249,12 +249,17 @@ article ul li {
 }
 
 .photos-grid-container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
 }
 
-.photos-grid-container img {
-  width: 100%; /* Ensure images take up the full width of their container */
-  object-fit: cover; /* Maintain image aspect ratio while filling the grid cell */
+.photos-grid-item {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
 }
 
 input {
