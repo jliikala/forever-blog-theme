@@ -6,10 +6,10 @@
 # don't forget image attribution if you're using Unsplash images :)
 
 post-slug-1:
-  image-path: "/images/covers/cover1.jpg"
+  image: "/images/covers/cover1.jpg"
 
 post-slug-2:
-  image-path: "/images/covers/cover2.jpg"
+  image: "/images/covers/cover2.jpg"
 
 post-slug-3:
-  image-path: "/images/covers/cover3.jpg"
+  image: "/images/covers/cover3.jpg"
