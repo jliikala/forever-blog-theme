@@ -2,8 +2,6 @@
   "paginate": 20,
   "languageCode": "en",
   "params": {
-    "newsletterId": "65934",
-    "blogTitle": "juhaliikala.com",
-    "blogDescription": "My mighty fine blog."
+    "newsletterId": ""
   }
 }
