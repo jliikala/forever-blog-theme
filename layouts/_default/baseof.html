@@ -2,12 +2,13 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
   {{ partial "head.html" . }}
   {{ if .File }}
-  {{ $slug := .File.BaseFileName }}
-  {{ $cover := index .Site.Data.covers $slug }}
+    {{ $slug := .File.BaseFileName }}
+    {{ $cover := index .Site.Data.covers $slug }}
   {{ end }}
   <body>
     <div class="post-cover"
-      style="background-image: url('{{ if .File }}{{ (index .Site.Data.covers (.File.BaseFileName)).image }}{{ else }}https://images.unsplash.com/photo-1466515562424-5c0e569369d8?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D{{ end }}');">
+        style="background-image:
+        url('{{ if and .File (index .Site.Data.covers (.File.BaseFileName)).image }}{{ (index .Site.Data.covers (.File.BaseFileName)).image }}{{ else }}{{ "https://images.unsplash.com/photo-1466515562424-5c0e569369d8?q=80&w=2621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" | relURL }}{{ end }}');">
     </div>
     <div class="blog-container">
       <div class="main-content">
